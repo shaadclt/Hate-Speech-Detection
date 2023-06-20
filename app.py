@@ -13,6 +13,7 @@ data = data[["tweet", "labels"]]
 import re
 import nltk
 stemmer = nltk.SnowballStemmer("english")
+nltk.download('stopwords')
 from nltk.corpus import stopwords
 import string
 stopword=set(stopwords.words('english'))
